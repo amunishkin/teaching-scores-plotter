@@ -1,5 +1,10 @@
 #
 # Ignore plotly.js download files
 #
-node_modules
+node_modules/
 package-lock.json
+
+#
+# Ignore data files
+#
+data/
