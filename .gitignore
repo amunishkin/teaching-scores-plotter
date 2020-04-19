@@ -5,6 +5,6 @@ node_modules/
 package-lock.json
 
 #
-# Ignore data files
+# Ignore non-plotting data files
 #
-data/
+data/2020Spring_Grades-CSE-20-01.csv
