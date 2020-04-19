@@ -29,8 +29,7 @@ function makeHistogramPlotly( x ){
         start: 60
       }
     }];
-    Plotly.newPlot(plotDiv, traces,
-      {title: 'Histogram Plot'});
+    Plotly.newPlot(plotDiv, traces);
 }
 
 // Pie chart ploting ------------------------------------------------
