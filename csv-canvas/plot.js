@@ -70,8 +70,7 @@ function makePiePlotly( values ){
     }];
     var layout = {
         height: 400,
-        width: 500,
-        
+        width: 500
     };
     Plotly.newPlot(plotDiv, data, layout);
 }
