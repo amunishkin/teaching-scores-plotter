@@ -19,7 +19,7 @@ function processHistogramData( allRows )
     makeHistogramPlotly( x );
 }
 function makeHistogramPlotly( x ){
-    var plotDiv = document.getElementById("hist-plot-area");
+    var plotDiv = document.getElementById("hist-plot-area3");
     var traces = [{
       x: x,
       type: 'histogram',
@@ -59,7 +59,7 @@ function processPieData( allRows )
     makePiePlotly( values );
 }
 function makePiePlotly( values ){
-    var plotDiv = document.getElementById("pie-plot-area");
+    var plotDiv = document.getElementById("pie-plot-area3");
     var data = [{
         type: 'pie',
         values: values,
