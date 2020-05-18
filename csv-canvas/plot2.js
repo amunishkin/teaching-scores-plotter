@@ -1,13 +1,13 @@
 /* --- Function defns --- */
 // Histogram ploting ------------------------------------------------
-function makeHistogram() 
+function makeHistogram2() 
 {
     // Plotting CSV data from AJAX call
     Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-2.csv", 
-        function(data){ processHistogramData(data) } 
+        function(data){ processHistogramData2(data) } 
         );
 }
-function processHistogramData( allRows ) 
+function processHistogramData2( allRows ) 
 {
     console.log(allRows);
     var x = [];
@@ -16,9 +16,9 @@ function processHistogramData( allRows )
         x.push( row['Current Score'] );
     }
     console.log( 'X',x );
-    makeHistogramPlotly( x );
+    makeHistogramPlotly2( x );
 }
-function makeHistogramPlotly( x ){
+function makeHistogramPlotly2( x ){
     var plotDiv = document.getElementById("hist-plot-area2");
     var traces = [{
       x: x,
@@ -33,14 +33,14 @@ function makeHistogramPlotly( x ){
 }
 
 // Pie chart ploting ------------------------------------------------
-function makePieChart() 
+function makePieChart2() 
 {
     // Plotting CSV data from AJAX call
     Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-2.csv", 
-        function(data){ processPieData(data) } 
+        function(data){ processPieData2(data) } 
         );
 }
-function processPieData( allRows ) 
+function processPieData2( allRows ) 
 {
     console.log(allRows);
     var val = 0;
@@ -56,9 +56,9 @@ function processPieData( allRows )
         // sort into bins...
         console.log( 'VAL',val );
     }
-    makePiePlotly( values );
+    makePiePlotly2( values );
 }
-function makePiePlotly( values ){
+function makePiePlotly2( values ){
     var plotDiv = document.getElementById("pie-plot-area2");
     var data = [{
         type: 'pie',
@@ -77,8 +77,8 @@ function makePiePlotly( values ){
 
 //-------------------------------------------------------------------
 /* --- MAIN CODE HERE --- */
-makeHistogram();
-makePieChart();
+makeHistogram2();
+makePieChart2();
 
 // Current Plotly.js version
 console.log( Plotly.BUILD );
