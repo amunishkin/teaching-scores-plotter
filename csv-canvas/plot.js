@@ -3,7 +3,7 @@
 function makeHistogram() 
 {
     // Plotting CSV data from AJAX call
-    Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-2.csv", 
+    Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-3.csv", 
         function(data){ processHistogramData(data) } 
         );
 }
@@ -36,7 +36,7 @@ function makeHistogramPlotly( x ){
 function makePieChart() 
 {
     // Plotting CSV data from AJAX call
-    Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-2.csv", 
+    Plotly.d3.csv("https://raw.githubusercontent.com/amunishkin/teaching-scores-plotter/master/data/plot-3.csv", 
         function(data){ processPieData(data) } 
         );
 }
